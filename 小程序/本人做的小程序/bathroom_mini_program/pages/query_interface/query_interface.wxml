@@ -1,0 +1,58 @@
+<!--pages/query_interface/query_interface.wxml-->
+<!-- <text>pages/query_interface/query_interface.wxml</text> -->
+
+<view class ='grey-part header'> 
+   <view bindtap='personal_func'> <image class="pink-circle" src="{{profile.avatarUrl}}" mode="cover"></image>
+</view>
+  <view class='font-header'>
+    <view>当前定位： {{inputPos}}</view>
+    <view>当前时间： {{time}}</view>
+  </view>
+</view>
+<view class='middle'>
+<view class='bathroom-part'>
+<block wx:for="{{brpos}}" wx:for-index="idx" wx:for-item="item" data-idx="{{idx}}">
+    <!-- console.log(br_pos); -->
+    <view class='row'>
+      <view  wx:if='{{item[0]==1}}' class='square purple' bindtap='purpleAlready' id='{{idx}}left'></view>
+      <view wx:else bindtap='stillWhite' id='{{idx}}left' class="square {{idx==chooseId&&chooseDir==0?'green':'white'}}"></view>
+      <view wx:if='{{item[1]==1}}' class='square purple' bindtap='purpleAlready' id='{{idx}}right'></view>
+      <view wx:else class="square {{idx==chooseId&&chooseDir==1?'green':'white'}}" bindtap='stillWhite' id='{{idx}}right' ></view>
+    </view>
+</block>
+  <!-- <view class='row'>
+    <view class='square' bindtap='bindItemTap'></view>
+    <view class='square blue'></view>
+  </view>
+  <view class='row'>
+    <view class='square purple'></view>
+    <view class='square'></view>
+  </view>
+  <view class='row'>
+    <view class='square purple'></view>
+    <view class='square'></view>
+  </view>
+  <view class='row'>
+    <view class='square'></view>
+    <view class='square purple'></view>
+  </view>
+  <view class='row'>
+    <view class='square'></view>
+    <view class='square blue'></view>
+  </view> -->
+
+</view>
+  <view class='description'>
+  <view class='square-col'>
+    <view class='square purple'></view><view class='square-fill'></view><text> 有人</text>
+    </view>
+    <view class='square-col'>
+    <view class='square'></view><view class='square-fill'></view><text> 无人</text>
+    </view>
+  </view>
+</view>
+<view class='footer'>
+
+  <view class="show-msg {{chooseBool==1||full==1?'show-msgtmp':''}}"><text  wx:if="{{full}}" class='textmp' >当前排队人数为{{queue_num}}人，\n预计等待时间{{st_wait}}-{{end_wait}}分钟。\n请及时留意通知消息！</text><text  wx:elif="{{chooseBool}}" class='textmp' >已选择{{chooseId}}{{chooseDir}}号间\n请在{{appointment}}前打卡确认</text><text wx:else >无需排队</text></view>
+<view class='purple-style' ><text wx:if="{{full}}" bindtap='wait_count'>确认预约</text><text wx:else bindtap='chooseTap'>请先选择</text></view>
+</view>

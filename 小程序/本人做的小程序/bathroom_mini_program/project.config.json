@@ -1,0 +1,107 @@
+{
+  "description": "项目配置文件",
+  "packOptions": {
+    "ignore": []
+  },
+  "setting": {
+    "urlCheck": true,
+    "es6": true,
+    "enhance": false,
+    "postcss": true,
+    "preloadBackgroundData": false,
+    "minified": true,
+    "newFeature": false,
+    "coverView": true,
+    "nodeModules": false,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
+    "uglifyFileName": false,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "compileHotReLoad": false,
+    "useMultiFrameRuntime": true,
+    "useApiHook": true,
+    "useApiHostProcess": false,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "enableEngineNative": false,
+    "bundle": false,
+    "useIsolateContext": true,
+    "useCompilerModule": true,
+    "userConfirmedUseCompilerModuleSwitch": false,
+    "userConfirmedBundleSwitch": false,
+    "packNpmManually": false,
+    "packNpmRelationList": [],
+    "minifyWXSS": true
+  },
+  "compileType": "miniprogram",
+  "libVersion": "2.14.4",
+  "appid": "wx92f509731a137f89",
+  "projectname": "bathroom",
+  "debugOptions": {
+    "hidedInDevtools": []
+  },
+  "scripts": {},
+  "isGameTourist": false,
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/query_interface/query_interface",
+          "pathName": "pages/query_interface/query_interface",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/success_interface/success_interface",
+          "pathName": "pages/success_interface/success_interface",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/full_soon_interface/full_soon_interface",
+          "pathName": "pages/full_soon_interface/full_soon_interface",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/full_interface/full_interface",
+          "pathName": "pages/full_interface/full_interface",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/personal_interface/personal_interface",
+          "pathName": "pages/personal_interface/personal_interface",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/count_down_interface/count_down_interface",
+          "pathName": "pages/count_down_interface/count_down_interface",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

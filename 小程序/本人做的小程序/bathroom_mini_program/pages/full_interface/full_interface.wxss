@@ -1,0 +1,2 @@
+/* pages/full_interface/full_interface.wxss */
+@import "../choose_interface/choose_interface.wxss"

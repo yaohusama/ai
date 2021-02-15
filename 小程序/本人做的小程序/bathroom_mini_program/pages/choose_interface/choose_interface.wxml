@@ -1,0 +1,48 @@
+<!--pages/choose_interface/choose_interface.wxml-->
+<!--pages/query_interface/query_interface.wxml-->
+<!-- <text>pages/query_interface/query_interface.wxml</text> -->
+<view class ='grey-part header'> 
+  <view class='pink-circle' bindtap='personal_func'></view>
+  <view class='font-header'>
+    <view>当前定位： 8号楼3层</view>
+    <view>当前时间： 20：58</view>
+  </view>
+</view>
+<view class='middle'>
+<view class='bathroom-part'>
+  <view class='row'>
+    <view class='square green'></view>
+    <view class='square blue'></view>
+  </view>
+  <view class='row'>
+    <view class='square purple'></view>
+    <view class='square'></view>
+  </view>
+  <view class='row'>
+    <view class='square purple'></view>
+    <view class='square'></view>
+  </view>
+  <view class='row'>
+    <view class='square'></view>
+    <view class='square purple'></view>
+  </view>
+  <view class='row'>
+    <view class='square'></view>
+    <view class='square blue'></view>
+  </view>
+
+</view>
+  <view class='description'>
+  <view class='square-col'>
+    <view class='square purple'></view><view class='square-fill'></view><text> 有人</text>
+    </view>
+    <view class='square-col'>
+    <view class='square'></view><view class='square-fill'></view><text> 无人</text>
+    </view>
+  </view>
+</view>
+<view class='footer'>
+
+  <view class='show-msg'><text>已选择1号间\n请在21：00前打卡确认</text></view>
+<view class='purple-style' bindtap='bindItemTap'><text>确认预约</text></view>
+</view>

@@ -1,0 +1,18 @@
+<!--pages/personal_interface/personal_interface.wxml-->
+<view class='personal-header'>
+  <view class='title'>编辑个人资料</view>
+  <view bindtap='personal_func'> <image class="pink-circle" src="{{profile.avatarUrl}}" mode="cover"></image></view>
+</view>
+<view class='data-part'>
+  <view class='data'>
+  <!-- <view>{{inputPos}}</view> -->
+  <view><input value="{{inputName}}" focus placeholder="姓名" bindinput='bindname'></input></view>
+  <View><input value="{{inputPhone}}" placeholder='手机号' maxlength="11" bindinput='bindtele' type='number'></input></View>
+  <view><input value="{{inputSex}}" placeholder='性别' type='text' bindinput='bindsex'></input></view>
+  <view><input value="{{inputNum}}" placeholder='学号' type='text' bindinput='bindnum'></input></view>
+  <view><input value="{{inputPos}}" placeholder='当前定位' type='text' bindinput='bindpos'></input></view>
+</view>
+
+
+</view>
+<view class='purple-style' bindtap='sureInfo'><text>确认</text></view>

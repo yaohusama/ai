@@ -1,0 +1,21 @@
+{
+  "pages":[
+    "pages/personal_interface/personal_interface", 
+    "pages/count_down_interface/count_down_interface", 
+    "pages/full_soon_interface/full_soon_interface", 
+    "pages/full_interface/full_interface", 
+    "pages/choose_interface/choose_interface",  
+    "pages/success_interface/success_interface", 
+    "pages/query_interface/query_interface", 
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "浴室小程序",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

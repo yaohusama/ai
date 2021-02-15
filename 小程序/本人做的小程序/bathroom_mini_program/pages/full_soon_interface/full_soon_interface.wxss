@@ -1,0 +1,33 @@
+/* pages/full_soon_interface/full_soon_interface.wxss */
+@import "../success_interface/success_interface.wxss";
+.footer .count-down {
+  top:0rpx;
+}
+.sure-button {
+  top:200rpx;
+}
+.middle-circle .show-msg {
+  
+  position:absolute;
+
+  left:60rpx;
+  border:10rpx,solid,rgb(0,0,0);
+  background-color: rgb(255, 255, 255); 
+ margin-top:40rpx;
+ /* margin-left:40rpx; */
+  width:600rpx;
+  height:400rpx;
+  line-height:60rpx;
+  /* height:10rpx; */
+  border-radius:50rpx;
+  display:flex;
+
+  justify-content: center;
+  text-align:center;
+  box-shadow:2rpx 2rpx 20rpx  rgb(196, 182, 182);
+}
+.middle-circle .show-msg text {
+  display:block;
+  position: absolute;
+  top:100rpx;
+}

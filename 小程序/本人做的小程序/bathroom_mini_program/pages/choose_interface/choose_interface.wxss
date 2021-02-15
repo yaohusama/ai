@@ -1,0 +1,15 @@
+/* pages/choose_interface/choose_interface.wxss */
+@import "../query_interface/query_interface.wxss";
+.show-msg{
+  /* text-align:center !important; */
+  word-wrap:break-word;
+  line-height: 50rpx !important;
+}
+.show-msg text {
+  position: absolute;
+  display:block;
+  top:55rpx;
+}
+.green {
+  background-color: rgb(0, 179, 80);
+}

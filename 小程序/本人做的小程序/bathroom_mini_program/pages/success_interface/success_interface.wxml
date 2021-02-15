@@ -1,0 +1,26 @@
+<!--pages/success_interface/success_interface.wxml-->
+<!--pages/query_interface/query_interface.wxml-->
+<!-- <text>pages/query_interface/query_interface.wxml</text> -->
+<view class ='grey-part header'> 
+  <!-- <view class='pink-circle' bindtap='personal_func'></view> -->
+  <view bindtap='personal_func'> <image class="pink-circle" src="{{profile.avatarUrl}}" mode="cover"></image>
+</view>
+  <view class='font-header'>
+    <view>当前定位： {{inputPos}}</view>
+    <view>当前时间： {{time}}</view>
+  </view>
+</view>
+<view class='middle-circle'>
+<view class='myicon-tick-checked'>
+<view class='tick'></view>
+
+</view>
+  <view class='appointment'>
+预约成功!
+  </view>
+</view>
+<view class='footer'>
+
+  <view class='count-down'><view>倒计时 {{countDownMinute}}:{{countDownSecond}}</view></view>
+<view class='purple-style' bindtap='bindItemTap'><text>放弃预约</text></view>
+</view>

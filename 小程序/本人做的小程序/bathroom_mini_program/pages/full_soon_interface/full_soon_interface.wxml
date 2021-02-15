@@ -1,0 +1,19 @@
+<!--pages/full_soon_interface/full_soon_interface.wxml-->
+
+<view class ='grey-part header'> 
+  <view bindtap='personal_func'> <image class="pink-circle" src="{{profile.avatarUrl}}" mode="cover"></image>
+</view>
+  <view class='font-header'>
+    <view>当前定位： {{inputPos}}</view>
+    <view>当前时间： {{time}}</view>
+  </view>
+</view>
+<view class='middle-circle'>
+  <view class='show-msg'><text>您预约的浴室马上到您了\n请带好洗浴用品前往浴室！\n请及时确认通知信息！</text></view>
+</view>
+<view class='footer'>
+
+  <view class='count-down'><view>倒计时 {{countDownMinute}}:{{countDownSecond}}</view></view>
+  <view class='purple-style sure-button'><text>确认</text></view>
+<view class='purple-style' bindtap='backToLast'><text>放弃预约</text></view>
+</view>

@@ -1,0 +1,75 @@
+/* pages/success_interface/success_interface.wxss */
+@import "../query_interface/query_interface.wxss";
+.middle-circle {
+  position: relative;
+  background-color:rgb(244, 244, 244);
+  /* height:625rpx; */
+  height:520rpx;
+  /* width:520rpx; */
+  /* border-radius: 50%; */
+  /* display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center; */
+}
+.myicon-tick-checked {
+  position: absolute;
+  height:350rpx;
+  width:350rpx;
+  border-radius: 50%;
+  top:40rpx;
+  /* margin:auto;
+  padding:auto; */
+  /* top:60rpx;
+  left */
+  left:50%;
+  transform:translate(-50%);
+  background-color: rgb(255, 255, 255);
+  box-shadow:2rpx 2rpx 20rpx  rgb(196, 182, 182);
+}
+.appointment {
+  position:absolute;
+
+  width:100%;
+  height:100rpx;
+  /* background-color: rgb(232, 240, 255); */
+  font-size:30rpx;
+  text-align:center;
+  line-height: 140rpx;
+  position:absolute;
+  bottom:0rpx;
+}
+.count-down {
+  position:absolute;
+  /* display:flex; */
+  display:block;
+
+  height:120rpx;
+  width:65%;
+  /* margin:0;
+  padding:0; */
+  
+  /* top:300rpx; */
+  top:100rpx;
+  background-color:rgb(232, 240, 255);
+  
+  color:rgb(0,0,0);
+  text-align:center;
+  line-height: 130rpx;
+  border-radius:50rpx;
+  box-shadow:2rpx 2rpx 20rpx  rgb(196, 182, 182);
+  /* align-content: center; */
+  /* border-radius:1000rpx;
+  display:flex; 
+   justify-content: center; */
+  /* align-content: center; */
+}
+.tick {
+  width:100rpx;
+  height:180rpx;
+  border-bottom:2px solid rgb(166, 136, 255);
+  border-right:2px solid rgb(166, 136, 255);
+  margin: 45rpx auto;
+  transform:rotate(45deg);
+}
+
